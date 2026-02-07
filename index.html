@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="WyleyMedia - Expert SEO Consulting Services. Boost your online visibility and drive organic traffic with proven strategies.">
+    <title>WyleyMedia | SEO Consultant - Grow Your Online Presence</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="WyleyMedia Logo">
+                <span class="logo-text">Wyley<span>Media</span></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="references.html" class="nav-link">References</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Elevate Your Digital Presence with Expert SEO</h1>
+            <p>We help businesses increase organic traffic, improve search rankings, and achieve sustainable online
+                growth through data-driven SEO strategies.</p>
+            <div>
+                <a href="services.html" class="btn btn-primary">Our Services</a>
+                <a href="contact.html" class="btn btn-secondary">Get Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-title">
+            <h2>Why Choose WyleyMedia?</h2>
+            <p>We deliver measurable results through proven SEO methodologies and cutting-edge techniques.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">&#128269;</div>
+                <h3>Technical SEO Audit</h3>
+                <p>Comprehensive analysis of your website's technical foundation to identify and fix issues affecting
+                    your search performance.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128200;</div>
+                <h3>Data-Driven Strategy</h3>
+                <p>Every recommendation is backed by thorough research and analytics to ensure maximum ROI on your SEO
+                    investment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#127919;</div>
+                <h3>Targeted Optimization</h3>
+                <p>We focus on keywords and strategies that matter most to your business goals and target audience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128640;</div>
+                <h3>Sustainable Growth</h3>
+                <p>Build long-term organic visibility with white-hat techniques that stand the test of algorithm
+                    updates.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#128202;</div>
+                <h3>Transparent Reporting</h3>
+                <p>Regular, detailed reports keep you informed about progress, rankings, and the impact of our work.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">&#129309;</div>
+                <h3>Dedicated Support</h3>
+                <p>Work directly with experienced SEO professionals who understand your industry and business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>150+</h3>
+                <p>Clients Served</p>
+            </div>
+            <div class="stat-item">
+                <h3>500%</h3>
+                <p>Average Traffic Increase</p>
+            </div>
+            <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Client Retention</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>Ready to Dominate Search Results?</h2>
+        <p>Let's discuss how we can help your business achieve its online growth goals with a customized SEO strategy.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Schedule a Free Consultation</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>WyleyMedia</h3>
+                <p>Professional SEO consulting services helping businesses grow their online presence and achieve
+                    sustainable organic growth.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Services</a>
+                <a href="references.html">References</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="services.html">Technical SEO</a>
+                <a href="services.html">On-Page Optimization</a>
+                <a href="services.html">Link Building</a>
+                <a href="services.html">Local SEO</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: hello@wyleymedia.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <p>Location: Orlando, FL</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+                <a href="#" class="social-link" aria-label="X/Twitter">X</a>
+                <a href="#" class="social-link" aria-label="Facebook">f</a>
+            </div>
+            <p>&copy; 2026 WyleyMedia. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.hamburger').classList.toggle('active');
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
