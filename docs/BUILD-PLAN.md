@@ -1,2 +1,46 @@
-Step 1 — Add the dark palette + fix 3 hardcoded colors (10 min) Your CSS has 3 places using hardcoded #e9ecef (form input borders, pricing card dividers, case study divider) that won't respond to theming. Fix those first by adding a --border-color variable to :root, then add a [data-theme="dark"] block that overrides your existing variables. Test by manually adding data-theme="dark" to in DevTools and walking every page. One critical thing to fix in this step: your footer uses background-color: var(--text-dark) — but in dark mode --text-dark becomes a light color, which would turn your footer white. You'll need a separate --footer-bg variable that stays fixed. Step 2 — Add smooth transitions (5 min) Add transition: background-color 0.3s ease, color 0.3s ease to body, .navbar, .feature-card, .contact-form, and form inputs. This makes the toggle feel polished instead of jarring. Test by toggling data-theme in DevTools. Step 3 — Add and wire the toggle button together (10 min) Place a sun/moon icon button in the navbar and immediately wire it with JavaScript to toggle data-theme="dark" on and flip the icon. Don't add a dead button mid-way — it looks like a bug to anyone visiting the site. Test clicking back and forth on all pages. Step 4 — Persist preference with correct priority logic (10 min) On page load, apply theme in this exact order: localStorage first → OS prefers-color-scheme second → default light third. This order matters — if you read both without a clear decision tree, the OS setting can fight the user's manual toggle. Test by toggling, refreshing, navigating between pages, and flipping your OS dark mode with no localStorage entry set. Step 5 — Final polish pass (10 min) Check every page in both modes looking for anything that slipped through — hover states, the logo SVG (if it has hardcoded fill colors it won't adapt), input placeholder text color, and scrollbar color. Fix stragglers.
+<ul>
+  <li>
+    <strong>Step 1 — Add the dark palette + fix hardcoded colors</strong>
+    <ul>
+      <li>Replace all hardcoded <code>#e9ecef</code> values with a new <code>--border-color</code> variable in <code>:root</code>.</li>
+      <li>Add a <code>[data-theme="dark"]</code> block that overrides your existing CSS variables.</li>
+      <li>Test by manually adding <code>data-theme="dark"</code> to the <code>&lt;html&gt;</code> element in DevTools.</li>
+      <li>Fix footer by replacing <code>background-color: var(--text-dark)</code> with a dedicated <code>--footer-bg</code> variable.</li>
+    </ul>
+  </li>
 
+  <li>
+    <strong>Step 2 — Add smooth transitions</strong>
+    <ul>
+      <li>Add <code>transition: background-color 0.3s ease, color 0.3s ease</code> to <code>body</code>, <code>.navbar</code>, <code>.feature-card</code>, <code>.contact-form</code>, and form inputs.</li>
+      <li>Test transitions by toggling <code>data-theme</code> in DevTools.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Step 3 — Add and wire the toggle button</strong>
+    <ul>
+      <li>Place a sun/moon icon button in the navbar.</li>
+      <li>Use JavaScript to toggle <code>data-theme="dark"</code> on the <code>&lt;html&gt;</code> element and flip the icon.</li>
+      <li>Ensure the button is functional immediately—avoid leaving a dead toggle.</li>
+      <li>Test clicking back and forth on all pages.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Step 4 — Persist preference with correct priority logic</strong>
+    <ul>
+      <li>On page load, apply theme in this order: localStorage → OS <code>prefers-color-scheme</code> → default light.</li>
+      <li>Test by toggling, refreshing, navigating pages, and switching OS dark mode with no saved preference.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Step 5 — Final polish pass</strong>
+    <ul>
+      <li>Check every page in both modes for missed elements.</li>
+      <li>Review hover states, SVG logo fills, placeholder text color, and scrollbar styling.</li>
+      <li>Fix any remaining inconsistencies.</li>
+    </ul>
+  </li>
+</ul>
