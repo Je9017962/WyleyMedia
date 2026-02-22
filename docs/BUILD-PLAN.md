@@ -1,3 +1,5 @@
+<H1>Steps from Claude to create a Dark Mode Option </H1>
+
 <ul>
   <li>
     <strong>Step 1 — Add the dark palette + fix hardcoded colors</strong>
