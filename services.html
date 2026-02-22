@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore WyleyMedia's comprehensive SEO services including technical SEO, on-page optimization, link building, and local SEO.">
+    <meta name="description"
+        content="Explore WyleyMedia's comprehensive SEO services including technical SEO, on-page optimization, link building, and local SEO.">
     <title>Our Services | WyleyMedia - SEO Consultant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -16,12 +19,21 @@
                 <span class="logo-text">Wyley<span>Media</span></span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="services.html" class="nav-link active">Services</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="references.html" class="nav-link">References</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle-mobile" aria-label="Toggle dark mode">
+                        <span class="icon-moon">🌙</span> Dark Mode
+                    </button>
+                </li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="icon-moon">🌙</span>
+                <span class="icon-sun">☀️</span>
+            </button>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -29,7 +41,7 @@
             </div>
         </div>
     </nav>
-
+    <script src="theme-toggle.js"></script>
     <!-- Hero Section -->
     <section class="services-hero">
         <div class="services-hero-content">
@@ -48,7 +60,8 @@
             <div class="service-card">
                 <div class="service-icon">&#128295;</div>
                 <h3>Technical SEO</h3>
-                <p>Comprehensive audits and fixes for site speed, crawlability, indexation, and Core Web Vitals optimization.</p>
+                <p>Comprehensive audits and fixes for site speed, crawlability, indexation, and Core Web Vitals
+                    optimization.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">&#128196;</div>
@@ -63,12 +76,14 @@
             <div class="service-card">
                 <div class="service-icon">&#128205;</div>
                 <h3>Local SEO</h3>
-                <p>Google Business Profile optimization, local citations, and geo-targeted strategies for local businesses.</p>
+                <p>Google Business Profile optimization, local citations, and geo-targeted strategies for local
+                    businesses.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">&#128221;</div>
                 <h3>Content Strategy</h3>
-                <p>Data-driven content planning, keyword research, and editorial calendars to attract and engage your audience.</p>
+                <p>Data-driven content planning, keyword research, and editorial calendars to attract and engage your
+                    audience.</p>
             </div>
             <div class="service-card">
                 <div class="service-icon">&#128202;</div>
@@ -83,7 +98,8 @@
         <div class="service-detail-content">
             <div class="service-detail-text">
                 <h2>Technical SEO Audit & Optimization</h2>
-                <p>Your website's technical foundation is crucial for search engine visibility. We conduct thorough audits to identify and resolve issues that may be holding back your rankings.</p>
+                <p>Your website's technical foundation is crucial for search engine visibility. We conduct thorough
+                    audits to identify and resolve issues that may be holding back your rankings.</p>
                 <ul>
                     <li>Site speed and performance optimization</li>
                     <li>Mobile-friendliness assessment</li>
@@ -103,7 +119,8 @@
         <div class="service-detail-content reverse">
             <div class="service-detail-text">
                 <h2>On-Page SEO & Content Optimization</h2>
-                <p>Maximize the impact of every page on your website with strategic on-page optimization that helps search engines understand and rank your content.</p>
+                <p>Maximize the impact of every page on your website with strategic on-page optimization that helps
+                    search engines understand and rank your content.</p>
                 <ul>
                     <li>Comprehensive keyword research</li>
                     <li>Title tag and meta description optimization</li>
@@ -123,7 +140,8 @@
         <div class="service-detail-content">
             <div class="service-detail-text">
                 <h2>Link Building & Digital PR</h2>
-                <p>Build authority and trust with search engines through high-quality backlinks from reputable websites in your industry.</p>
+                <p>Build authority and trust with search engines through high-quality backlinks from reputable websites
+                    in your industry.</p>
                 <ul>
                     <li>Competitor backlink analysis</li>
                     <li>Strategic outreach campaigns</li>
@@ -200,7 +218,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>WyleyMedia</h3>
-                <p>Professional SEO consulting services helping businesses grow their online presence and achieve sustainable organic growth.</p>
+                <p>Professional SEO consulting services helping businesses grow their online presence and achieve
+                    sustainable organic growth.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -249,4 +268,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact WyleyMedia for a free SEO consultation. Let's discuss how we can help grow your online presence.">
+    <meta name="description"
+        content="Contact WyleyMedia for a free SEO consultation. Let's discuss how we can help grow your online presence.">
     <title>Contact Us | WyleyMedia - SEO Consultant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -16,12 +19,21 @@
                 <span class="logo-text">Wyley<span>Media</span></span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="references.html" class="nav-link">References</a></li>
-                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle-mobile" aria-label="Toggle dark mode">
+                        <span class="icon-moon">🌙</span> Dark Mode
+                    </button>
+                </li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="icon-moon">🌙</span>
+                <span class="icon-sun">☀️</span>
+            </button>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -29,7 +41,7 @@
             </div>
         </div>
     </nav>
-
+    <script src="theme-toggle.js"></script>
     <!-- Hero Section -->
     <section class="contact-hero">
         <div class="contact-hero-content">
@@ -43,7 +55,9 @@
         <div class="contact-wrapper">
             <div class="contact-info">
                 <h2>Let's Talk SEO</h2>
-                <p>Whether you're looking to improve your search rankings, increase organic traffic, or need a comprehensive SEO strategy, we're here to help. Fill out the form or reach out directly using the contact information below.</p>
+                <p>Whether you're looking to improve your search rankings, increase organic traffic, or need a
+                    comprehensive SEO strategy, we're here to help. Fill out the form or reach out directly using the
+                    contact information below.</p>
 
                 <div class="contact-details">
                     <div class="contact-item">
@@ -119,7 +133,8 @@
                 </div>
                 <div class="form-group">
                     <label for="message">Tell Us About Your Project *</label>
-                    <textarea id="message" name="message" required placeholder="Describe your current SEO challenges and goals..."></textarea>
+                    <textarea id="message" name="message" required
+                        placeholder="Describe your current SEO challenges and goals..."></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
             </form>
@@ -135,19 +150,27 @@
         <div class="features-grid" style="max-width: 900px;">
             <div class="feature-card" style="text-align: left;">
                 <h3>How long does SEO take to show results?</h3>
-                <p>SEO is a long-term strategy. Most clients start seeing improvements in 3-6 months, with significant results typically appearing around the 6-12 month mark. The timeline depends on your industry, competition, and current website state.</p>
+                <p>SEO is a long-term strategy. Most clients start seeing improvements in 3-6 months, with significant
+                    results typically appearing around the 6-12 month mark. The timeline depends on your industry,
+                    competition, and current website state.</p>
             </div>
             <div class="feature-card" style="text-align: left;">
                 <h3>Do you guarantee first page rankings?</h3>
-                <p>No reputable SEO consultant can guarantee specific rankings. We focus on implementing proven strategies that consistently improve organic visibility and traffic. We're transparent about realistic expectations.</p>
+                <p>No reputable SEO consultant can guarantee specific rankings. We focus on implementing proven
+                    strategies that consistently improve organic visibility and traffic. We're transparent about
+                    realistic expectations.</p>
             </div>
             <div class="feature-card" style="text-align: left;">
                 <h3>What industries do you work with?</h3>
-                <p>We've worked with clients across various industries including e-commerce, SaaS, healthcare, legal, finance, and more. Our strategies are customized for each industry's unique challenges and opportunities.</p>
+                <p>We've worked with clients across various industries including e-commerce, SaaS, healthcare, legal,
+                    finance, and more. Our strategies are customized for each industry's unique challenges and
+                    opportunities.</p>
             </div>
             <div class="feature-card" style="text-align: left;">
                 <h3>How do you report on progress?</h3>
-                <p>We provide detailed monthly reports covering rankings, traffic, conversions, and key metrics. Depending on your plan, you'll also have regular strategy calls to discuss progress and adjustments.</p>
+                <p>We provide detailed monthly reports covering rankings, traffic, conversions, and key metrics.
+                    Depending on your plan, you'll also have regular strategy calls to discuss progress and adjustments.
+                </p>
             </div>
         </div>
     </section>
@@ -164,7 +187,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>WyleyMedia</h3>
-                <p>Professional SEO consulting services helping businesses grow their online presence and achieve sustainable organic growth.</p>
+                <p>Professional SEO consulting services helping businesses grow their online presence and achieve
+                    sustainable organic growth.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -213,4 +237,5 @@
         });
     </script>
 </body>
+
 </html>

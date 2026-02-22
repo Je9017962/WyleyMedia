@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about WyleyMedia - Your trusted SEO consulting partner with over 10 years of experience helping businesses succeed online.">
+    <meta name="description"
+        content="Learn about WyleyMedia - Your trusted SEO consulting partner with over 10 years of experience helping businesses succeed online.">
     <title>About Us | WyleyMedia - SEO Consultant</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -16,24 +19,45 @@
                 <span class="logo-text">Wyley<span>Media</span></span>
             </a>
             <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="references.html" class="nav-link">References</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="theme-toggle-mobile" aria-label="Toggle dark mode">
+                        <span class="icon-moon">🌙</span> Dark Mode
+                    </button>
+                </li>
             </ul>
+            <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="icon-moon">🌙</span>
+                <span class="icon-sun">☀️</span>
+            </button>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-    </nav>
 
+    </nav>
+    <script src="theme-toggle.js"></script>
     <!-- Hero Section -->
     <section class="about-hero">
         <h1>About WyleyMedia</h1>
-        <p>Helping businesses achieve sustainable online growth since 2014</p>
+        <p>WyleyMedia blends professional expertise with an approachable, client‑focused philosophy to help businesses
+            strengthen their online presence through strategic SEO and accessible web design. Since 2024, we have
+            supported organizations across industries by improving search visibility, enhancing user experience, and
+            ensuring every digital interaction is clear, inclusive, and aligned with modern standards. Our work
+            emphasizes technical precision, ethical strategy, and long‑term sustainability, giving clients solutions
+            that perform well for both search engines and real people.
+
+            We believe that strong digital strategy comes from collaboration and clarity. Clients work directly with a
+            team that communicates transparently, explains recommendations in plain language, and builds solutions that
+            feel both polished and welcoming. By combining deep SEO knowledge with accessibility‑driven design, we help
+            businesses reach wider audiences, build trust, and grow confidently in an ever‑changing digital landscape.
+        </p>
     </section>
 
     <!-- About Content -->
@@ -44,9 +68,14 @@
             </div>
             <div class="about-text">
                 <h2>Our Story</h2>
-                <p>WyleyMedia was founded with a simple mission: to help businesses of all sizes harness the power of organic search to grow their online presence.</p>
-                <p>With over a decade of experience in the ever-evolving world of SEO, we've helped hundreds of clients across various industries achieve top rankings, increase organic traffic, and drive meaningful business results.</p>
-                <p>We believe that effective SEO isn't about quick fixes or black-hat tactics. It's about building a solid foundation, creating valuable content, and earning trust from both search engines and users.</p>
+                <p>WyleyMedia was founded with a simple mission: to help businesses of all sizes harness the power of
+                    organic search to grow their online presence.</p>
+                <p>With over a decade of experience in the ever-evolving world of SEO, we've helped hundreds of clients
+                    across various industries achieve top rankings, increase organic traffic, and drive meaningful
+                    business results.</p>
+                <p>We believe that effective SEO isn't about quick fixes or black-hat tactics. It's about building a
+                    solid foundation, creating valuable content, and earning trust from both search engines and users.
+                </p>
             </div>
         </div>
     </section>
@@ -55,20 +84,24 @@
     <section style="background-color: var(--bg-light);">
         <div class="section-title">
             <h2>Our Mission</h2>
-            <p>To empower businesses with transparent, effective, and ethical SEO strategies that deliver lasting results.</p>
+            <p>To empower businesses with transparent, effective, and ethical SEO strategies that deliver lasting
+                results.</p>
         </div>
         <div class="values-grid">
             <div class="value-item">
                 <h3>&#128161; Innovation</h3>
-                <p>We stay ahead of algorithm changes and industry trends to ensure our clients always have a competitive edge.</p>
+                <p>We stay ahead of algorithm changes and industry trends to ensure our clients always have a
+                    competitive edge.</p>
             </div>
             <div class="value-item">
                 <h3>&#128170; Integrity</h3>
-                <p>We use only white-hat SEO techniques and maintain complete transparency in our methods and reporting.</p>
+                <p>We use only white-hat SEO techniques and maintain complete transparency in our methods and reporting.
+                </p>
             </div>
             <div class="value-item">
                 <h3>&#127942; Excellence</h3>
-                <p>We're committed to delivering exceptional results and exceeding client expectations on every project.</p>
+                <p>We're committed to delivering exceptional results and exceeding client expectations on every project.
+                </p>
             </div>
             <div class="value-item">
                 <h3>&#129309; Partnership</h3>
@@ -87,7 +120,8 @@
             <div class="feature-card">
                 <div class="feature-icon">&#128218;</div>
                 <h3>Deep Expertise</h3>
-                <p>Our team has extensive experience across all aspects of SEO, from technical audits to content strategy and link building.</p>
+                <p>Our team has extensive experience across all aspects of SEO, from technical audits to content
+                    strategy and link building.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">&#128202;</div>
@@ -136,7 +170,8 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>WyleyMedia</h3>
-                <p>Professional SEO consulting services helping businesses grow their online presence and achieve sustainable organic growth.</p>
+                <p>Professional SEO consulting services helping businesses grow their online presence and achieve
+                    sustainable organic growth.</p>
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
@@ -185,4 +220,5 @@
         });
     </script>
 </body>
+
 </html>
